@@ -5,24 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/indexStyle.css">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="mainContainer">
 
         <div class="sidebar">
-            <h4>Dashboard</h4>
-            <div class="sidebarBtnDiv">
-                <button class="sidebarBtn">Home</button>
-                <button class="sidebarBtn">Profile</button>
-                <button class="sidebarBtn">Messages</button>
-                <button class="sidebarBtn">History</button>
-                <button class="sidebarBtn">Tasks</button>
-                <button class="sidebarBtn">Communities</button>
+            <div class="sidebarDash">
+                <div class="sidebarTextWithIcons">
+                    <span class="material-icons md-light md-14 sidebarIcons">home</span>
+                    <h4>Dashboard</h4>
+                </div>
             </div>
-            <div class="sidebarBtnDiv">
-                <button class="sidebarBtn">Settings</button>
-                <button class="sidebarBtn">Support</button>
-                <button class="sidebarBtn">Privacy</button>
+            
+            <div class="sidebarBtnDiv" id="sidebarBtnDiv1">
+                <div class="sidebarTextWithIcons">
+                    <span class="material-icons md-light md-14 sidebarIcons">home</span>
+                    <button class="sidebarBtn" id="sidebarBtnHome">Home</button>
+                </div>
+                <div class="sidebarTextWithIcons">
+                    <span class="material-icons md-light md-14 sidebarIcons">person</span>
+                    <button class="sidebarBtn" id="sidebarBtnProfile">Profile</button>
+                </div>
+                <div class="sidebarTextWithIcons">
+                    <span class="material-icons md-light md-14 sidebarIcons">message</span>
+                    <button class="sidebarBtn" id="sidebarBtnMessages">Messages</button>
+                </div>
+                <div class="sidebarTextWithIcons">
+                    <span class="material-icons md-light md-14 sidebarIcons">history</span>
+                    <button class="sidebarBtn" id="sidebarBtnHistory">History</button>
+                </div>
+                <div class="sidebarTextWithIcons">
+                    <span class="material-icons md-light md-14 sidebarIcons">task</span>
+                    <button class="sidebarBtn" id="sidebarBtnTasks">Tasks</button>
+                </div>
+                <div class="sidebarTextWithIcons">
+                    <span class="material-icons md-light md-14 sidebarIcons">groups</span>
+                    <button class="sidebarBtn" id="sidebarBtnCommu">Communities</button>
+                </div>
+                
+                
+                
+                
+            </div>
+            <div class="sidebarBtnDiv" id="sidebarBtnDiv2">
+                <div class="sidebarTextWithIcons">
+                    <span class="material-icons md-light md-14 sidebarIcons">settings</span>
+                    <button class="sidebarBtn" id="sidebarBtnSettings">Settings</button>
+                </div>
+                
+                <div class="sidebarTextWithIcons">
+                    <span class="material-icons md-light md-14 sidebarIcons">help</span>
+                    <button class="sidebarBtn" id="sidebarBtnSupport">Support</button>
+                </div>
+                
+                <div class="sidebarTextWithIcons">
+                    <span class="material-icons md-light md-14 sidebarIcons">privacy_tip</span>
+                    <button class="sidebarBtn" id="sidebarBtnPivacy">Privacy</button>
+                </div>
+                
             </div>
         </div>
 
