@@ -143,10 +143,6 @@ html,body{
     margin-top: auto;
     grid-column: 2/4;
 }
-.infoContainer{
-    display: grid;
-    grid-column: 2/3;
-}
 
 .personInfoBtns{
     display: grid;
@@ -164,4 +160,133 @@ html,body{
 }
 .personInfoBtn:hover{
     background-color: rgb(37, 37, 248);
+}
+
+
+/****************INFO_CONTAINER*/
+
+.infoContainer{
+    display: grid;
+    grid-template-columns:  1fr 0.5fr 0.5fr;
+    grid-template-rows:  350px  350px;
+    grid-column: 2/3;
+    background-color: #b6cdf875;
+    padding-left: 10px;
+    height: 100vh;
+    
+}
+
+.infoCard{
+    display: grid;
+    width: 300px;
+    height: 150px;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 1fr 50px;
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 10px;
+    align-self: center;
+    border-left: 5px solid rgba(222, 184, 135, 0.7);
+    border-bottom: 5px solid rgba(222, 184, 135, 0.4);
+}
+.infoCard > div >h5{
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.infoCard > div >p{
+    margin-top: 0px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.infoCardText{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    grid-column: 1/3;
+    
+}
+
+.infoCardBtns{
+    justify-self: end;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-right: 5px;
+}
+
+.infoCardsContainer{
+    display: grid;
+    grid-template-columns:  0.5fr 0.5fr ;
+    grid-template-rows: auto;
+    align-content:  baseline;
+    justify-self: center;
+  
+  
+}
+.infoCardsContainer >   h4{
+    margin-bottom: 0px;
+    grid-column: 1/3;
+    margin-left: 15px;
+}
+
+.annoucementsContainer{
+    box-shadow: 0px 5px 5px #5d8de775;
+    margin-top: 0px;
+    height: 100vh;
+    grid-column:2/3;
+    
+}
+
+.annoucements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 18vw;
+    border-radius: 10px;
+    
+}
+.annoucement{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 18vw;
+    
+    border-left: 5px solid rgb(221, 222, 135, 0.7);
+    border-bottom: 5px solid rgb(221, 222, 135, 0.4);
+    border-radius: 12px;
+}
+.annoucement > h5{
+    margin-bottom: 0px;
+    
+}
+
+.trendingsContainer{
+    margin-top: 0px;
+    height: 100vh;
+    grid-column:3/4;
+}
+
+.trending{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 18vw;
+    
+    border-left: 5px solid rgba(224, 151, 136, 0.7);
+    border-bottom: 5px solid rgba(224, 151, 136, 0.4);
+    border-radius: 12px;
+}
+.trending > div > h5{
+    margin-bottom: 0px;
+}
+.trending > div > p{
+    margin-top: 0px;
+}
+.cardHover:hover{
+    box-shadow: 10px 5px 5px #b6cdf875;
 }
